@@ -27,3 +27,21 @@ function is_array(input) {
   console.log(is_array("w3resource"));
   console.log(is_array([1, 2, 4, 0]));
   
+
+
+// Write a function to sort the given value based on it's id
+const library = [
+    { author: "Bill Gates", title: "The Road Ahead", id: 1 },
+    { author: "Steve Jobs", title: "Walter Isaacson", id: 3 },
+    { author: "Suzanne Collins",title: "Mockingjay: The Final Book of The Hunger Games",id: 2}
+  ];
+
+function sortById(input) {
+    input.sort((a,b)=> a.id - b.id) ;
+    input.forEach(element => {
+        console.log(`${element.author}`);
+        
+    });
+   
+}
+sortById(library);
