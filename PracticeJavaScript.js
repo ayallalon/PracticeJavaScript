@@ -45,3 +45,17 @@ function sortById(input) {
    
 }
 sortById(library);
+
+
+//Write a JavaScript function that reverses a number.
+function reverseNumber(numberInput) {
+    let numberString = numberInput.toString();
+    let reversNumber = "" ;
+    for (let i = numberString.length - 1; i >= 0; i--)
+    {
+        reversNumber = reversNumber + numberString[i];
+    }
+    return reversNumber;
+}
+
+console.log(reverseNumber(32243));
